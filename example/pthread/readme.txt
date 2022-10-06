@@ -18,14 +18,14 @@ buffer example
   semaphores and mutex use the mutex lock for the buffer cr and id numbers.  the semphores manage empty and full
   the ptrcheat uses void * values to send id numbers as parameter (as a pointer actually).  not recommended, but an exampe of how starnge pointers can be used.
 
-unisex is an implmenetation for the unisex bathroom problem, that works, but it has starvation issues
+dock is an implmenetation for the starport dock problem, that works, but it has starvation issues
 
 compile:
 g++ semaphore_mutex_oddeven.cpp -o oddeven -lpthread -std=c++11
 g++ semaphore_buffer.cpp -o buffer -lpthread -std=c++11
 g++ semaphore_mutex_buffer.cpp -o buffer_sm -lpthread -std=c++11
 g++ semaphore_buffer_ptrcheat.cpp -o buffer_cheat -lpthread -std=c++11
-g++ semaphore_mutex_unisex.cpp -o unisex -lpthread -std=c++11
+g++ semaphore_mutex_dock.cpp -o dock -lpthread -std=c++11
 
 
 

@@ -26,7 +26,7 @@ void secondthread() {
   }
 }
 
-main() {
+int main() {
   int i;
   //thread variables
   thread th1, th2;
@@ -36,7 +36,7 @@ main() {
   cout << "created the first thread" << endl;
 
 //create thread2
-  th2 =thread(&secondthread);
+  th2 =thread(secondthread);
   cout << "created the second thread" << endl;
 
   //the parent process is the only one who should get to this code.
@@ -47,4 +47,5 @@ main() {
 //wait for threads to finish
   th1.join();
   th2.join();
+ return 0;
 }

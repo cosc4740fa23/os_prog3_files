@@ -18,14 +18,14 @@ buffer (three versions)  all of them take parameters for the number producers an
   uses semaphores to access the buffer and id number
   uses sempahores for the buffere and mutex for the id number  
   param sends the id number as parameter to each thread.
-unisex is a solution for the unisex bathroom, that works, but it has starvation issues
+dock is a solution for the starport dock, that works, but it has starvation issues
 
 compile:
 g++ semaphore_mutex_oddeven.cpp -pthread -std=c++11 -o oddeven
 g++ semaphore_buffer.cpp -pthread -std=c++11 -o buffer
 g++ semaphore_buffer_param.cpp -pthread -std=c++11 -o buffer_param
 g++ semaphore_mutex_buffer.cpp -pthread -std=c++11 -o buffer_sm
-g++ semaphore_mutex_unisex.cpp -pthread -std=c++11 -o unisex
+g++ semaphore_mutex_dock.cpp -pthread -std=c++11 -o dock
 
 
 atomic 
@@ -34,3 +34,5 @@ atomic
 g++ atomic_example.cpp -o atomic -pthread -std=c++11
 
 
+
+there is also a makefile, which make all the examples.

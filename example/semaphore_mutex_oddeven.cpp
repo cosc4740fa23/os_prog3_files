@@ -54,8 +54,7 @@ void even() {
   } 
 }
 
-main()
-{
+int main() {
   thread th1, th2;
 
 //init semaphore sem1 to 0, so  sem1 will always go second
@@ -75,4 +74,6 @@ main()
 //wait for threads to finish
   th1.join();
   th2.join();
+
+  return 0;
 }

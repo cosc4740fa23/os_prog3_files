@@ -84,7 +84,7 @@ void consum() {
   } 
 }
 
-main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) {
   int i;
 
 
@@ -127,4 +127,5 @@ main(int argc, char* argv[]) {
   for(i=0;i<num_p;i++) 
     prod[i].join();
 
+  return 0;
 }

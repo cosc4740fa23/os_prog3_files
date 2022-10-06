@@ -31,7 +31,7 @@ void even(int id) {
   } 
 }
 
-main() {
+int main() {
   int i=1;
   thread th1, th2;
 
@@ -47,4 +47,6 @@ main() {
 //wait for threads to finish
   th1.join();
   th2.join();
+  
+  return 0;
 }
